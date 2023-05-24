@@ -77,7 +77,7 @@ function App() {
           </header>
           <Game settingsData={settingsData} />
           <footer className="flex justify-center text-sm mt-8 mb-1">
-              <Leadle />
+            <Leadle />
           </footer>
         </div>
       </div>

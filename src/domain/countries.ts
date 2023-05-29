@@ -2,6 +2,8 @@
 // Countries with long/lat => https://developers.google.com/public-data/docs/canonical/countries_csv
 // Countries images => https://github.com/djaiss/mapsicon
 
+import { getCountriesInfo } from "../hooks/getCountriesInfo";
+
 const countryCodesWithImage = [
   "ad",
   "ao",
@@ -281,9 +283,9 @@ export const countries: Country[] = [
     latitude: 33.93911, 
     longitude: 67.709953, 
     name: "Afghanistan", 
-    title: "",
-    leader: "",
-    img_link: "",
+    title: "Supreme Leader of Afghanistan",
+    leader: "Hibatullah Akhundzada",
+    img_link: "Hibatullah_Akhundzada",
   },
   {
     code: "AG",
@@ -308,9 +310,9 @@ export const countries: Country[] = [
     latitude: 41.153332, 
     longitude: 20.168331, 
     name: "Albania", 
-    title: "",
-    leader: "",
-    img_link: "",
+    title: "Prime Minister of Albania",
+    leader: "Edi Rama",
+    img_link: "Edi_Rama",
   },
   { 
     code: "AM", 
@@ -785,8 +787,8 @@ export const countries: Country[] = [
     latitude: 28.033886, 
     longitude: 1.659626, 
     name: "Algeria", 
-    title: "",
-    leader: "",
+    title: "President of Algeria",
+    leader: "Abdelmadjid Tebboune",
     img_link: "",
   },
   { 
@@ -2738,4 +2740,1232 @@ export function sanitizeCountryName(countryName: string): string {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[- '()]/g, "")
     .toLowerCase();
+}
+
+export function setCountriesLeaderInfo() {
+
+  const toPrint = [];
+
+  const leaders : Array<Array<string>> = [
+    [
+        "Supreme Leader of Afghanistan",
+        "Hibatullah Akhundzada",
+        "Supreme_Leader_of_Afghanistan",
+        "Hibatullah_Akhundzada"
+    ],
+    [
+        "Prime Minister of Albania",
+        "Edi Rama",
+        "Prime_Minister_of_Albania",
+        "Edi_Rama"
+    ],
+    [
+        "President of Algeria",
+        "Abdelmadjid Tebboune",
+        "President_of_Algeria",
+        "Abdelmadjid_Tebboune"
+    ],
+    [
+        "Prime Minister of Andorra",
+        "Xavier Espot",
+        "Prime_Minister_of_Andorra",
+        "Xavier_Espot_Zamora"
+    ],
+    [
+        "President of Angola",
+        "João Lourenço",
+        "President_of_Angola",
+        "Jo%C3%A3o_Louren%C3%A7o"
+    ],
+    [
+        "Prime Minister of Antigua and Barbuda",
+        "Gaston Browne",
+        "Prime_Minister_of_Antigua_and_Barbuda",
+        "Gaston_Browne"
+    ],
+    [
+        "President of Argentina",
+        "Alberto Fernández",
+        "President_of_Argentina",
+        "Alberto_Fern%C3%A1ndez"
+    ],
+    [
+        "Prime Minister of Armenia",
+        "Nikol Pashinyan",
+        "Prime_Minister_of_Armenia",
+        "Nikol_Pashinyan"
+    ],
+    [
+        "Prime Minister of Australia",
+        "Anthony Albanese",
+        "Prime_Minister_of_Australia",
+        "Anthony_Albanese"
+    ],
+    [
+        "Chancellor of Austria",
+        "Karl Nehammer",
+        "Chancellor_of_Austria",
+        "Karl_Nehammer"
+    ],
+    [
+        "President of Azerbaijan",
+        "Ilham Aliyev",
+        "President_of_Azerbaijan",
+        "Ilham_Aliyev"
+    ],
+    [
+        "Prime Minister of the Bahamas",
+        "Philip Davis",
+        "Prime_Minister_of_the_Bahamas",
+        "Philip_Davis_(Bahamian_politician)"
+    ],
+    [
+        "King of Bahrain",
+        "Hamad bin Isa Al Khalifa",
+        "King_of_Bahrain",
+        "Hamad_bin_Isa_Al_Khalifa"
+    ],
+    [
+        "Prime Minister of Bangladesh",
+        "Sheikh Hasina",
+        "Prime_Minister_of_Bangladesh",
+        "Sheikh_Hasina"
+    ],
+    [
+        "Prime Minister of Barbados",
+        "Mia Mottley",
+        "Prime_Minister_of_Barbados",
+        "Mia_Mottley"
+    ],
+    [
+        "President of Belarus",
+        "Alexander Lukashenko",
+        "President_of_Belarus",
+        "Alexander_Lukashenko"
+    ],
+    [
+        "Prime Minister of Belgium",
+        "Alexander De Croo",
+        "Prime_Minister_of_Belgium",
+        "Alexander_De_Croo"
+    ],
+    [
+        "Prime Minister of Belize",
+        "Johnny Briceño",
+        "Prime_Minister_of_Belize",
+        "Johnny_Brice%C3%B1o"
+    ],
+    [
+        "President of Benin",
+        "Patrice Talon",
+        "President_of_Benin",
+        "Patrice_Talon"
+    ],
+    [
+        "Prime Minister of Bhutan",
+        "Lotay Tshering",
+        "Prime_Minister_of_Bhutan",
+        "Lotay_Tshering"
+    ],
+    [
+        "President of Bolivia",
+        "Luis Arce",
+        "President_of_Bolivia",
+        "Luis_Arce"
+    ],
+    [
+        "High Representative for Bosnia and Herzegovina",
+        "Christian Schmidt",
+        "High_Representative_for_Bosnia_and_Herzegovina",
+        "Christian_Schmidt_(politician)"
+    ],
+    [
+        "President of Botswana",
+        "Mokgweetsi Masisi",
+        "President_of_Botswana",
+        "Mokgweetsi_Masisi"
+    ],
+    [
+        "President of Brazil",
+        "Luiz Inácio Lula da Silva",
+        "President_of_Brazil",
+        "Luiz_In%C3%A1cio_Lula_da_Silva"
+    ],
+    [
+        "Sultan of Brunei",
+        "Prime Minister",
+        "Sultan_of_Brunei",
+        "Prime_Minister_of_Brunei"
+    ],
+    [
+        "President of Bulgaria",
+        "Rumen Radev",
+        "President_of_Bulgaria",
+        "Rumen_Radev"
+    ],
+    [
+        "Prime Minister of Bulgaria",
+        "Galab Donev",
+        "Prime_Minister_of_Bulgaria",
+        "Galab_Donev"
+    ],
+    [
+        "President of Burundi",
+        "Évariste Ndayishimiye",
+        "President_of_Burundi",
+        "%C3%89variste_Ndayishimiye"
+    ],
+    [
+        "Prime Minister of Cambodia",
+        "Hun Sen",
+        "Prime_Minister_of_Cambodia",
+        "Hun_Sen"
+    ],
+    [
+        "President of Cameroon",
+        "Paul Biya",
+        "President_of_Cameroon",
+        "Paul_Biya"
+    ],
+    [
+        "Prime Minister of Canada",
+        "Justin Trudeau",
+        "Prime_Minister_of_Canada",
+        "Justin_Trudeau"
+    ],
+    [
+        "Prime Minister of Cape Verde",
+        "Ulisses Correia e Silva",
+        "Prime_Minister_of_Cape_Verde",
+        "Ulisses_Correia_e_Silva"
+    ],
+    [
+        "President of the Central African Republic",
+        "Faustin-Archange Touadéra",
+        "President_of_the_Central_African_Republic",
+        "Faustin-Archange_Touad%C3%A9ra"
+    ],
+    [
+        "President of Chad",
+        "Mahamat Déby",
+        "President_of_Chad",
+        "Mahamat_D%C3%A9by"
+    ],
+    [
+        "President of Chile",
+        "Gabriel Boric",
+        "President_of_Chile",
+        "Gabriel_Boric"
+    ],
+    [
+        "General Secretary of the Communist Party of China",
+        "Xi Jinping",
+        "General_Secretary_of_the_Communist_Party_of_China",
+        "Xi_Jinping"
+    ],
+    [
+        "President of Colombia",
+        "Gustavo Petro",
+        "President_of_Colombia",
+        "Gustavo_Petro"
+    ],
+    [
+        "President of the Comoros",
+        "Azali Assoumani",
+        "President_of_the_Comoros",
+        "Azali_Assoumani"
+    ],
+    [
+        "President of the Democratic Republic of the Congo",
+        "Félix Tshisekedi",
+        "President_of_the_Democratic_Republic_of_the_Congo",
+        "F%C3%A9lix_Tshisekedi"
+    ],
+    [
+        "President of the Republic of the Congo",
+        "Denis Sassou Nguesso",
+        "President_of_the_Republic_of_the_Congo",
+        "Denis_Sassou_Nguesso"
+    ],
+    [
+        "President of Costa Rica",
+        "Rodrigo Chaves Robles",
+        "President_of_Costa_Rica",
+        "Rodrigo_Chaves_Robles"
+    ],
+    [
+        "Prime Minister of Croatia",
+        "Andrej Plenković",
+        "Prime_Minister_of_Croatia",
+        "Andrej_Plenkovi%C4%87"
+    ],
+    [
+        "First Secretary of the Communist Party of Cuba",
+        "Miguel Díaz-Canel",
+        "First_Secretary_of_the_Communist_Party_of_Cuba",
+        "Miguel_D%C3%ADaz-Canel"
+    ],
+    [
+        "President of Cyprus",
+        "Nikos Christodoulides",
+        "President_of_Cyprus",
+        "Nikos_Christodoulides"
+    ],
+    [
+        "Prime Minister of the Czech Republic",
+        "Petr Fiala",
+        "Prime_Minister_of_the_Czech_Republic",
+        "Petr_Fiala"
+    ],
+    [
+        "Prime Minister of Denmark",
+        "Mette Frederiksen",
+        "Prime_Minister_of_Denmark",
+        "Mette_Frederiksen"
+    ],
+    [
+        "President of Djibouti",
+        "Ismaïl Omar Guelleh",
+        "President_of_Djibouti",
+        "Isma%C3%AFl_Omar_Guelleh"
+    ],
+    [
+        "Prime Minister of Dominica",
+        "Roosevelt Skerrit",
+        "Prime_Minister_of_Dominica",
+        "Roosevelt_Skerrit"
+    ],
+    [
+        "President of the Dominican Republic",
+        "Luis Abinader",
+        "President_of_the_Dominican_Republic",
+        "Luis_Abinader"
+    ],
+    [
+        "Prime Minister of East Timor",
+        "Taur Matan Ruak",
+        "Prime_Minister_of_East_Timor",
+        "Taur_Matan_Ruak"
+    ],
+    [
+        "President of Ecuador",
+        "Guillermo Lasso",
+        "President_of_Ecuador",
+        "Guillermo_Lasso"
+    ],
+    [
+        "President of Egypt",
+        "Abdel Fattah el-Sisi",
+        "President_of_Egypt",
+        "Abdel_Fattah_el-Sisi"
+    ],
+    [
+        "President of El Salvador",
+        "Nayib Bukele",
+        "President_of_El_Salvador",
+        "Nayib_Bukele"
+    ],
+    [
+        "President of Equatorial Guinea",
+        "Teodoro Obiang Nguema Mbasogo",
+        "President_of_Equatorial_Guinea",
+        "Teodoro_Obiang_Nguema_Mbasogo"
+    ],
+    [
+        "President of Eritrea",
+        "Isaias Afwerki",
+        "President_of_Eritrea",
+        "Isaias_Afwerki"
+    ],
+    [
+        "Prime Minister of Estonia",
+        "Kaja Kallas",
+        "Prime_Minister_of_Estonia",
+        "Kaja_Kallas"
+    ],
+    [
+        "Ngwenyama",
+        "Mswati III",
+        "Ngwenyama",
+        "Mswati_III"
+    ],
+    [
+        "Prime Minister of Ethiopia",
+        "Abiy Ahmed",
+        "Prime_Minister_of_Ethiopia",
+        "Abiy_Ahmed"
+    ],
+    [
+        "Prime Minister of Fiji",
+        "Sitiveni Rabuka",
+        "Prime_Minister_of_Fiji",
+        "Sitiveni_Rabuka"
+    ],
+    [
+        "Prime Minister of Finland",
+        "Sanna Marin",
+        "Prime_Minister_of_Finland",
+        "Sanna_Marin"
+    ],
+    [
+        "President of France",
+        "Emmanuel Macron",
+        "President_of_France",
+        "Emmanuel_Macron"
+    ],
+    [
+        "President of Gabon",
+        "Ali Bongo Ondimba",
+        "President_of_Gabon",
+        "Ali_Bongo_Ondimba"
+    ],
+    [
+        "President of the Gambia",
+        "Adama Barrow",
+        "President_of_the_Gambia",
+        "Adama_Barrow"
+    ],
+    [
+        "Prime Minister of Georgia",
+        "Irakli Garibashvili",
+        "Prime_Minister_of_Georgia",
+        "Irakli_Garibashvili"
+    ],
+    [
+        "Chancellor of Germany",
+        "Olaf Scholz",
+        "Chancellor_of_Germany",
+        "Olaf_Scholz"
+    ],
+    [
+        "President of Ghana",
+        "Nana Akufo-Addo",
+        "President_of_Ghana",
+        "Nana_Akufo-Addo"
+    ],
+    [
+        "Prime Minister of Greece",
+        "Ioannis Sarmas",
+        "Prime_Minister_of_Greece",
+        "Ioannis_Sarmas"
+    ],
+    [
+        "Prime Minister of Grenada",
+        "Dickon Mitchell",
+        "Prime_Minister_of_Grenada",
+        "Dickon_Mitchell"
+    ],
+    [
+        "President of Guatemala",
+        "Alejandro Giammattei",
+        "President_of_Guatemala",
+        "Alejandro_Giammattei"
+    ],
+    [
+        "President of Guinea-Bissau",
+        "Umaro Sissoco Embaló",
+        "President_of_Guinea-Bissau",
+        "Umaro_Sissoco_Embal%C3%B3"
+    ],
+    [
+        "President of Guyana",
+        "Irfaan Ali",
+        "President_of_Guyana",
+        "Irfaan_Ali"
+    ],
+    [
+        "Prime Minister of Haiti",
+        "Ariel Henry",
+        "Prime_Minister_of_Haiti",
+        "Ariel_Henry"
+    ],
+    [
+        "President of Honduras",
+        "Xiomara Castro",
+        "President_of_Honduras",
+        "Xiomara_Castro"
+    ],
+    [
+        "Prime Minister of Hungary",
+        "Viktor Orbán",
+        "Prime_Minister_of_Hungary",
+        "Viktor_Orb%C3%A1n"
+    ],
+    [
+        "Prime Minister of Iceland",
+        "Katrín Jakobsdóttir",
+        "Prime_Minister_of_Iceland",
+        "Katr%C3%ADn_Jakobsd%C3%B3ttir"
+    ],
+    [
+        "Prime Minister of India",
+        "Narendra Modi",
+        "Prime_Minister_of_India",
+        "Narendra_Modi"
+    ],
+    [
+        "President of Indonesia",
+        "Joko Widodo",
+        "President_of_Indonesia",
+        "Joko_Widodo"
+    ],
+    [
+        "Supreme Leader of Iran",
+        "Ali Khamenei",
+        "Supreme_Leader_of_Iran",
+        "Ali_Khamenei"
+    ],
+    [
+        "Prime Minister of Iraq",
+        "Mohammed Shia' Al Sudani",
+        "Prime_Minister_of_Iraq",
+        "Mohammed_Shia%27_Al_Sudani"
+    ],
+    [
+        "Taoiseach",
+        "Leo Varadkar",
+        "Taoiseach",
+        "Leo_Varadkar"
+    ],
+    [
+        "Prime Minister of Israel",
+        "Benjamin Netanyahu",
+        "Prime_Minister_of_Israel",
+        "Benjamin_Netanyahu"
+    ],
+    [
+        "Prime Minister of Italy",
+        "Giorgia Meloni",
+        "Prime_Minister_of_Italy",
+        "Giorgia_Meloni"
+    ],
+    [
+        "President of the Ivory Coast",
+        "Alassane Ouattara",
+        "President_of_the_Ivory_Coast",
+        "Alassane_Ouattara"
+    ],
+    [
+        "Prime Minister of Jamaica",
+        "Andrew Holness",
+        "Prime_Minister_of_Jamaica",
+        "Andrew_Holness"
+    ],
+    [
+        "Prime Minister of Japan",
+        "Fumio Kishida",
+        "Prime_Minister_of_Japan",
+        "Fumio_Kishida"
+    ],
+    [
+        "King of Jordan",
+        "Abdullah II",
+        "King_of_Jordan",
+        "Abdullah_II_of_Jordan"
+    ],
+    [
+        "President of Kazakhstan",
+        "Kassym-Jomart Tokayev",
+        "President_of_Kazakhstan",
+        "Kassym-Jomart_Tokayev"
+    ],
+    [
+        "President of Kenya",
+        "William Ruto",
+        "President_of_Kenya",
+        "William_Ruto"
+    ],
+    [
+        "President of Kiribati",
+        "Taneti Maamau",
+        "President_of_Kiribati",
+        "Taneti_Maamau"
+    ],
+    [
+        "Emir of Kuwait",
+        "Nawaf Al-Ahmad Al-Jaber Al-Sabah",
+        "Emir_of_Kuwait",
+        "Nawaf_Al-Ahmad_Al-Jaber_Al-Sabah"
+    ],
+    [
+        "President of Kyrgyzstan",
+        "Sadyr Japarov",
+        "President_of_Kyrgyzstan",
+        "Sadyr_Japarov"
+    ],
+    [
+        "General Secretary of the Lao People's Revolutionary Party",
+        "Thongloun Sisoulith",
+        "General_Secretary_of_the_Lao_People%27s_Revolutionary_Party",
+        "Thongloun_Sisoulith"
+    ],
+    [
+        "Prime Minister of Latvia",
+        "Krišjānis Kariņš",
+        "Prime_Minister_of_Latvia",
+        "Arturs_Kri%C5%A1j%C4%81nis_Kari%C5%86%C5%A1"
+    ],
+    [
+        "Prime Minister of Lebanon",
+        "Najib Mikati",
+        "Prime_Minister_of_Lebanon",
+        "Najib_Mikati"
+    ],
+    [
+        "Prime Minister of Lesotho",
+        "Sam Matekane",
+        "Prime_Minister_of_Lesotho",
+        "Sam_Matekane"
+    ],
+    [
+        "President of Liberia",
+        "George Weah",
+        "President_of_Liberia",
+        "George_Weah"
+    ],
+    [
+        "Prime Minister of Libya",
+        "Abdul Hamid Dbeibeh",
+        "Prime_Minister_of_Libya",
+        "Abdul_Hamid_Dbeibeh"
+    ],
+    [
+        "Monarchy of Liechtenstein",
+        "Hans-Adam II",
+        "Monarchy_of_Liechtenstein",
+        "Hans-Adam_II,_Prince_of_Liechtenstein"
+    ],
+    [
+        "Regent of Liechtenstein",
+        "Alois",
+        "Regent_of_Liechtenstein",
+        "Alois,_Hereditary_Prince_of_Liechtenstein"
+    ],
+    [
+        "Prime Minister of Lithuania",
+        "Ingrida Šimonytė",
+        "Prime_Minister_of_Lithuania",
+        "Ingrida_%C5%A0imonyt%C4%97"
+    ],
+    [
+        "Prime Minister of Luxembourg",
+        "Xavier Bettel",
+        "Prime_Minister_of_Luxembourg",
+        "Xavier_Bettel"
+    ],
+    [
+        "President of Madagascar",
+        "Andry Rajoelina",
+        "President_of_Madagascar",
+        "Andry_Rajoelina"
+    ],
+    [
+        "President of Malawi",
+        "Lazarus Chakwera",
+        "President_of_Malawi",
+        "Lazarus_Chakwera"
+    ],
+    [
+        "Prime Minister of Malaysia",
+        "Anwar Ibrahim",
+        "Prime_Minister_of_Malaysia",
+        "Anwar_Ibrahim"
+    ],
+    [
+        "President of the Maldives",
+        "Ibrahim Mohamed Solih",
+        "President_of_the_Maldives",
+        "Ibrahim_Mohamed_Solih"
+    ],
+    [
+        "President of Mali",
+        "Assimi Goïta",
+        "President_of_Mali",
+        "Assimi_Go%C3%AFta"
+    ],
+    [
+        "Prime Minister of Malta",
+        "Robert Abela",
+        "Prime_Minister_of_Malta",
+        "Robert_Abela"
+    ],
+    [
+        "President of the Marshall Islands",
+        "David Kabua",
+        "President_of_the_Marshall_Islands",
+        "David_Kabua"
+    ],
+    [
+        "President of Mauritania",
+        "Mohamed Ould Ghazouani",
+        "President_of_Mauritania",
+        "Mohamed_Ould_Ghazouani"
+    ],
+    [
+        "Prime Minister of Mauritius",
+        "Pravind Jugnauth",
+        "Prime_Minister_of_Mauritius",
+        "Pravind_Jugnauth"
+    ],
+    [
+        "President of Mexico",
+        "Andrés Manuel López Obrador",
+        "President_of_Mexico",
+        "Andr%C3%A9s_Manuel_L%C3%B3pez_Obrador"
+    ],
+    [
+        "President of the Federated States of Micronesia",
+        "Wesley Simina",
+        "President_of_the_Federated_States_of_Micronesia",
+        "Wesley_Simina"
+    ],
+    [
+        "President of Moldova",
+        "Maia Sandu",
+        "President_of_Moldova",
+        "Maia_Sandu"
+    ],
+    [
+        "Prime Minister of Moldova",
+        "Dorin Recean",
+        "Prime_Minister_of_Moldova",
+        "Dorin_Recean"
+    ],
+    [
+        "Monarchy of Monaco",
+        "Albert II",
+        "Monarchy_of_Monaco",
+        "Albert_II,_Prince_of_Monaco"
+    ],
+    [
+        "Prime Minister of Mongolia",
+        "Luvsannamsrain Oyun-Erdene",
+        "Prime_Minister_of_Mongolia",
+        "Luvsannamsrain_Oyun-Erdene"
+    ],
+    [
+        "Prime Minister of Montenegro",
+        "Dritan Abazović",
+        "Prime_Minister_of_Montenegro",
+        "Dritan_Abazovi%C4%87"
+    ],
+    [
+        "List of rulers of Morocco",
+        "Mohammed VI",
+        "List_of_rulers_of_Morocco",
+        "Mohammed_VI_of_Morocco"
+    ],
+    [
+        "President of Mozambique",
+        "Filipe Nyusi",
+        "President_of_Mozambique",
+        "Filipe_Nyusi"
+    ],
+    [
+        "Chairman of the State Administration Council",
+        "Min Aung Hlaing",
+        "Chairman_of_the_State_Administration_Council",
+        "Min_Aung_Hlaing"
+    ],
+    [
+        "President of Myanmar",
+        "Myint Swe",
+        "President_of_Myanmar",
+        "Myint_Swe"
+    ],
+    [
+        "President of Namibia",
+        "Hage Geingob",
+        "President_of_Namibia",
+        "Hage_Geingob"
+    ],
+    [
+        "President of Nauru",
+        "Russ Kun",
+        "President_of_Nauru",
+        "Russ_Kun"
+    ],
+    [
+        "Prime Minister of Nepal",
+        "Pushpa Kamal Dahal",
+        "Prime_Minister_of_Nepal",
+        "Pushpa_Kamal_Dahal"
+    ],
+    [
+        "Prime Minister of the Netherlands",
+        "Mark Rutte",
+        "Prime_Minister_of_the_Netherlands",
+        "Mark_Rutte"
+    ],
+    [
+        "Prime Minister of New Zealand",
+        "Chris Hipkins",
+        "Prime_Minister_of_New_Zealand",
+        "Chris_Hipkins"
+    ],
+    [
+        "President of Nicaragua",
+        "Daniel Ortega",
+        "President_of_Nicaragua",
+        "Daniel_Ortega"
+    ],
+    [
+        "President of Niger",
+        "Mohamed Bazoum",
+        "President_of_Niger",
+        "Mohamed_Bazoum"
+    ],
+    [
+        "President of Nigeria",
+        "Muhammadu Buhari",
+        "President_of_Nigeria",
+        "Muhammadu_Buhari"
+    ],
+    [
+        "General Secretary of the Workers' Party of Korea",
+        "Kim Jong Un",
+        "General_Secretary_of_the_Workers%27_Party_of_Korea",
+        "Kim_Jong_Un"
+    ],
+    [
+        "Prime Minister of North Macedonia",
+        "Dimitar Kovačevski",
+        "Prime_Minister_of_North_Macedonia",
+        "Dimitar_Kova%C4%8Devski"
+    ],
+    [
+        "Prime Minister of Norway",
+        "Jonas Gahr Støre",
+        "Prime_Minister_of_Norway",
+        "Jonas_Gahr_St%C3%B8re"
+    ],
+    [
+        "Sultan of Oman",
+        "Haitham bin Tariq",
+        "Sultan_of_Oman",
+        "Haitham_bin_Tariq"
+    ],
+    [
+        "Prime Minister of Pakistan",
+        "Shehbaz Sharif",
+        "Prime_Minister_of_Pakistan",
+        "Shehbaz_Sharif"
+    ],
+    [
+        "President of Palau",
+        "Surangel Whipps Jr.",
+        "President_of_Palau",
+        "Surangel_Whipps_Jr."
+    ],
+    [
+        "President of the State of Palestine",
+        "Mahmoud Abbas",
+        "President_of_the_State_of_Palestine",
+        "Mahmoud_Abbas"
+    ],
+    [
+        "President of Panama",
+        "Laurentino Cortizo",
+        "President_of_Panama",
+        "Laurentino_Cortizo"
+    ],
+    [
+        "Prime Minister of Papua New Guinea",
+        "James Marape",
+        "Prime_Minister_of_Papua_New_Guinea",
+        "James_Marape"
+    ],
+    [
+        "President of Paraguay",
+        "Mario Abdo Benítez",
+        "President_of_Paraguay",
+        "Mario_Abdo_Ben%C3%ADtez"
+    ],
+    [
+        "President of Peru",
+        "Dina Boluarte",
+        "President_of_Peru",
+        "Dina_Boluarte"
+    ],
+    [
+        "President of the Philippines",
+        "Bongbong Marcos",
+        "President_of_the_Philippines",
+        "Bongbong_Marcos"
+    ],
+    [
+        "President of Poland",
+        "Andrzej Duda",
+        "President_of_Poland",
+        "Andrzej_Duda"
+    ],
+    [
+        "Prime Minister of Poland",
+        "Mateusz Morawiecki",
+        "Prime_Minister_of_Poland",
+        "Mateusz_Morawiecki"
+    ],
+    [
+        "Prime Minister of Portugal",
+        "António Costa",
+        "Prime_Minister_of_Portugal",
+        "Ant%C3%B3nio_Costa"
+    ],
+    [
+        "Emir of Qatar",
+        "Tamim bin Hamad Al Thani",
+        "Emir_of_Qatar",
+        "Tamim_bin_Hamad_Al_Thani"
+    ],
+    [
+        "Prime Minister of Romania",
+        "Nicolae Ciucă",
+        "Prime_Minister_of_Romania",
+        "Nicolae_Ciuc%C4%83"
+    ],
+    [
+        "President of Russia",
+        "Vladimir Putin",
+        "President_of_Russia",
+        "Vladimir_Putin"
+    ],
+    [
+        "President of Rwanda",
+        "Paul Kagame",
+        "President_of_Rwanda",
+        "Paul_Kagame"
+    ],
+    [
+        "Prime Minister of Saint Kitts and Nevis",
+        "Terrance Drew",
+        "Prime_Minister_of_Saint_Kitts_and_Nevis",
+        "Terrance_Drew"
+    ],
+    [
+        "Prime Minister of Saint Lucia",
+        "Philip J. Pierre",
+        "Prime_Minister_of_Saint_Lucia",
+        "Philip_J._Pierre"
+    ],
+    [
+        "Prime Minister of Saint Vincent and the Grenadines",
+        "Ralph Gonsalves",
+        "Prime_Minister_of_Saint_Vincent_and_the_Grenadines",
+        "Ralph_Gonsalves"
+    ],
+    [
+        "Prime Minister of Samoa",
+        "Fiamē Naomi Mataʻafa",
+        "Prime_Minister_of_Samoa",
+        "Fiam%C4%93_Naomi_Mata%CA%BBafa"
+    ],
+    [
+        "San Marino Secretary for Foreign Affairs",
+        "Luca Beccari",
+        "San_Marino_Secretary_for_Foreign_Affairs",
+        "Luca_Beccari"
+    ],
+    [
+        "Prime Minister of São Tomé and Príncipe",
+        "Patrice Trovoada",
+        "Prime_Minister_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe",
+        "Patrice_Trovoada"
+    ],
+    [
+        "King of Saudi Arabia",
+        "Salman",
+        "King_of_Saudi_Arabia",
+        "Salman_of_Saudi_Arabia"
+    ],
+    [
+        "Prime Minister of Saudi Arabia",
+        "Mohammed bin Salman",
+        "Prime_Minister_of_Saudi_Arabia",
+        "Mohammed_bin_Salman"
+    ],
+    [
+        "President of Senegal",
+        "Macky Sall",
+        "President_of_Senegal",
+        "Macky_Sall"
+    ],
+    [
+        "President of Serbia",
+        "Aleksandar Vučić",
+        "President_of_Serbia",
+        "Aleksandar_Vu%C4%8Di%C4%87"
+    ],
+    [
+        "Prime Minister of Serbia",
+        "Ana Brnabić",
+        "Prime_Minister_of_Serbia",
+        "Ana_Brnabi%C4%87"
+    ],
+    [
+        "President of Seychelles",
+        "Wavel Ramkalawan",
+        "President_of_Seychelles",
+        "Wavel_Ramkalawan"
+    ],
+    [
+        "President of Sierra Leone",
+        "Julius Maada Bio",
+        "President_of_Sierra_Leone",
+        "Julius_Maada_Bio"
+    ],
+    [
+        "Prime Minister of Singapore",
+        "Lee Hsien Loong",
+        "Prime_Minister_of_Singapore",
+        "Lee_Hsien_Loong"
+    ],
+    [
+        "Prime Minister of Slovakia",
+        "Ľudovít Ódor",
+        "Prime_Minister_of_Slovakia",
+        "%C4%BDudov%C3%ADt_%C3%93dor"
+    ],
+    [
+        "Prime Minister of Slovenia",
+        "Robert Golob",
+        "Prime_Minister_of_Slovenia",
+        "Robert_Golob"
+    ],
+    [
+        "Prime Minister of Solomon Islands",
+        "Manasseh Sogavare",
+        "Prime_Minister_of_Solomon_Islands",
+        "Manasseh_Sogavare"
+    ],
+    [
+        "President of Somalia",
+        "Hassan Sheikh Mohamud",
+        "President_of_Somalia",
+        "Hassan_Sheikh_Mohamud"
+    ],
+    [
+        "Prime Minister of Somalia",
+        "Hamza Abdi Barre",
+        "Prime_Minister_of_Somalia",
+        "Hamza_Abdi_Barre"
+    ],
+    [
+        "President of South Africa",
+        "Cyril Ramaphosa",
+        "President_of_South_Africa",
+        "Cyril_Ramaphosa"
+    ],
+    [
+        "President of South Korea",
+        "Yoon Suk-yeol",
+        "President_of_South_Korea",
+        "Yoon_Suk-yeol"
+    ],
+    [
+        "President of South Sudan",
+        "Salva Kiir Mayardit",
+        "President_of_South_Sudan",
+        "Salva_Kiir_Mayardit"
+    ],
+    [
+        "Prime Minister of Spain",
+        "Pedro Sánchez",
+        "Prime_Minister_of_Spain",
+        "Pedro_S%C3%A1nchez"
+    ],
+    [
+        "President of Sri Lanka",
+        "Ranil Wickremesinghe",
+        "President_of_Sri_Lanka",
+        "Ranil_Wickremesinghe"
+    ],
+    [
+        "President of Suriname",
+        "Chan Santokhi",
+        "President_of_Suriname",
+        "Chan_Santokhi"
+    ],
+    [
+        "Prime Minister of Sweden",
+        "Ulf Kristersson",
+        "Prime_Minister_of_Sweden",
+        "Ulf_Kristersson"
+    ],
+    [
+        "President of Syria",
+        "Bashar al-Assad",
+        "President_of_Syria",
+        "Bashar_al-Assad"
+    ],
+    [
+        "President of Tajikistan",
+        "Emomali Rahmon",
+        "President_of_Tajikistan",
+        "Emomali_Rahmon"
+    ],
+    [
+        "President of Tanzania",
+        "Samia Suluhu Hassan",
+        "President_of_Tanzania",
+        "Samia_Suluhu_Hassan"
+    ],
+    [
+        "Prime Minister of Thailand",
+        "Prayut Chan-o-cha",
+        "Prime_Minister_of_Thailand",
+        "Prayut_Chan-o-cha"
+    ],
+    [
+        "President of Togo",
+        "Faure Gnassingbé",
+        "President_of_Togo",
+        "Faure_Gnassingb%C3%A9"
+    ],
+    [
+        "Prime Minister of Tonga",
+        "Siaosi Sovaleni",
+        "Prime_Minister_of_Tonga",
+        "Siaosi_Sovaleni"
+    ],
+    [
+        "Prime Minister of Trinidad and Tobago",
+        "Keith Rowley",
+        "Prime_Minister_of_Trinidad_and_Tobago",
+        "Keith_Rowley"
+    ],
+    [
+        "President of Tunisia",
+        "Kaïs Saïed",
+        "President_of_Tunisia",
+        "Kais_Saied"
+    ],
+    [
+        "President of Turkey",
+        "Recep Tayyip Erdoğan",
+        "President_of_Turkey",
+        "Recep_Tayyip_Erdo%C4%9Fan"
+    ],
+    [
+        "People's Council of Turkmenistan",
+        "Gurbanguly Berdimuhamedow",
+        "People%27s_Council_of_Turkmenistan",
+        "Gurbanguly_Berdimuhamedow"
+    ],
+    [
+        "President of Turkmenistan",
+        "Serdar Berdimuhamedow",
+        "President_of_Turkmenistan",
+        "Serdar_Berdimuhamedow"
+    ],
+    [
+        "Prime Minister of Tuvalu",
+        "Kausea Natano",
+        "Prime_Minister_of_Tuvalu",
+        "Kausea_Natano"
+    ],
+    [
+        "President of Uganda",
+        "Yoweri Museveni",
+        "President_of_Uganda",
+        "Yoweri_Museveni"
+    ],
+    [
+        "President of Ukraine",
+        "Volodymyr Zelenskyy",
+        "President_of_Ukraine",
+        "Volodymyr_Zelenskyy"
+    ],
+    [
+        "President of the United Arab Emirates",
+        "Mohamed bin Zayed Al Nahyan",
+        "President_of_the_United_Arab_Emirates",
+        "Mohamed_bin_Zayed_Al_Nahyan"
+    ],
+    [
+        "Prime Minister of the United Kingdom",
+        "Rishi Sunak",
+        "Prime_Minister_of_the_United_Kingdom",
+        "Rishi_Sunak"
+    ],
+    [
+        "President of the United States",
+        "Joe Biden",
+        "President_of_the_United_States",
+        "Joe_Biden"
+    ],
+    [
+        "President of Uruguay",
+        "Luis Lacalle Pou",
+        "President_of_Uruguay",
+        "Luis_Alberto_Lacalle_Pou"
+    ],
+    [
+        "President of Uzbekistan",
+        "Shavkat Mirziyoyev",
+        "President_of_Uzbekistan",
+        "Shavkat_Mirziyoyev"
+    ],
+    [
+        "Prime Minister of Vanuatu",
+        "Ishmael Kalsakau",
+        "Prime_Minister_of_Vanuatu",
+        "Ishmael_Kalsakau"
+    ],
+    [
+        "List of sovereigns of Vatican City State",
+        "Pope Francis",
+        "List_of_sovereigns_of_Vatican_City_State",
+        "Pope_Francis"
+    ],
+    [
+        "President of Venezuela",
+        "Nicolás Maduro",
+        "President_of_Venezuela",
+        "Nicol%C3%A1s_Maduro"
+    ],
+    [
+        "General Secretary of the Communist Party of Vietnam",
+        "Nguyễn Phú Trọng",
+        "General_Secretary_of_the_Communist_Party_of_Vietnam",
+        "Nguy%E1%BB%85n_Ph%C3%BA_Tr%E1%BB%8Dng"
+    ],
+    [
+        "President of Yemen",
+        "Rashad al-Alimi",
+        "President_of_Yemen",
+        "Rashad_al-Alimi"
+    ],
+    [
+        "President of Zambia",
+        "Hakainde Hichilema",
+        "President_of_Zambia",
+        "Hakainde_Hichilema"
+    ],
+    [
+        "President of Zimbabwe",
+        "Emmerson Mnangagwa",
+        "President_of_Zimbabwe",
+        "Emmerson_Mnangagwa"
+    ]
+];
+
+  for (let i = 0; i < leaders.length; i++) {
+    let attemptAtCountryName;
+    if (leaders[i][0].includes(" of ")) {
+      attemptAtCountryName = leaders[i][0].split("of").pop();
+      if (attemptAtCountryName) {
+        for (let j = 0; j < countries.length; j++) {
+          if (sanitizeCountryName(countries[j].name) === sanitizeCountryName(attemptAtCountryName)) {
+            countries[j].title = leaders[i][0];
+            countries[j].leader = leaders[i][1];
+            countries[j].img_link = leaders[i][3];
+            console.log(attemptAtCountryName);
+            toPrint.push({title: leaders[i][0], leader: leaders[i][1], img_link: leaders[i][3]})
+          }
+        }
+      }
+    }
+  }
+
+  console.log(toPrint);
 }

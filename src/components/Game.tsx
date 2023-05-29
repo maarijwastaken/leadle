@@ -5,6 +5,7 @@ import {
   countries,
   getCountryName,
   sanitizeCountryName,
+  setCountriesLeaderInfo,
 } from "../domain/countries";
 import { useGuesses } from "../hooks/useGuesses";
 import { CountryInput } from "./CountryInput";
@@ -15,6 +16,8 @@ import { useTranslation } from "react-i18next";
 import { SettingsData } from "../hooks/useSettings";
 import { useMode } from "../hooks/useMode";
 import { useCountry } from "../hooks/useCountry";
+import { getCountriesInfo } from "../hooks/getCountriesInfo";
+import { get } from "http";
 
 function getDayString() {
   return DateTime.now().toFormat("yyyy-MM-dd");
@@ -24,6 +27,10 @@ const MAX_TRY_COUNT = 6;
 
 interface GameProps {
   settingsData: SettingsData;
+}
+
+function testFunction() {
+  setCountriesLeaderInfo();
 }
 
 export function Game({ settingsData }: GameProps) {
@@ -134,6 +141,7 @@ export function Game({ settingsData }: GameProps) {
         settingsData={settingsData}
       />
       <div className="my-2">
+        <button onClick={testFunction}>Test</button>
         {gameEnded ? (
           <>
             <Share

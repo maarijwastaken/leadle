@@ -253,6 +253,7 @@ export interface Country {
   longitude: number;
   name: string;
   title: string;
+  leader: string;
   img_link: string;
 }
 
@@ -263,6 +264,7 @@ export const countries: Country[] = [
     longitude: 1.601554, 
     name: "Andorra", 
     title: "",
+    leader: "",
     img_link: "", 
   },
   {
@@ -271,7 +273,8 @@ export const countries: Country[] = [
     longitude: 53.847818,
     name: "United Arab Emirates", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "AF", 
@@ -279,7 +282,8 @@ export const countries: Country[] = [
     longitude: 67.709953, 
     name: "Afghanistan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "AG",
@@ -287,6 +291,7 @@ export const countries: Country[] = [
     longitude: -61.796428,
     name: "Antigua and Barbuda", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -295,7 +300,8 @@ export const countries: Country[] = [
     longitude: -63.068615, 
     name: "Anguilla", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "AL", 
@@ -303,7 +309,8 @@ export const countries: Country[] = [
     longitude: 20.168331, 
     name: "Albania", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "AM", 
@@ -311,7 +318,8 @@ export const countries: Country[] = [
     longitude: 45.038189, 
     name: "Armenia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "AN",
@@ -319,6 +327,7 @@ export const countries: Country[] = [
     longitude: -69.060087,
     name: "Netherlands Antilles", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -327,7 +336,8 @@ export const countries: Country[] = [
     longitude: 17.873887, 
     name: "Angola", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "AQ",
@@ -335,6 +345,7 @@ export const countries: Country[] = [
     longitude: -0.071389,
     name: "Antarctica", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -343,6 +354,7 @@ export const countries: Country[] = [
     longitude: -63.616672,
     name: "Argentina", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -351,6 +363,7 @@ export const countries: Country[] = [
     longitude: -170.132217,
     name: "American Samoa", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -359,7 +372,8 @@ export const countries: Country[] = [
     longitude: 14.550072, 
     name: "Austria", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "AU",
@@ -367,6 +381,7 @@ export const countries: Country[] = [
     longitude: 133.775136,
     name: "Australia", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -375,7 +390,8 @@ export const countries: Country[] = [
     longitude: -69.968338, 
     name: "Aruba", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "AZ", 
@@ -383,7 +399,8 @@ export const countries: Country[] = [
     longitude: 47.576927, 
     name: "Azerbaijan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "BA",
@@ -391,6 +408,7 @@ export const countries: Country[] = [
     longitude: 17.679076,
     name: "Bosnia and Herzegovina", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -399,7 +417,8 @@ export const countries: Country[] = [
     longitude: -59.543198, 
     name: "Barbados", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BD", 
@@ -407,7 +426,8 @@ export const countries: Country[] = [
     longitude: 90.356331, 
     name: "Bangladesh", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BE", 
@@ -415,7 +435,8 @@ export const countries: Country[] = [
     longitude: 4.469936, 
     name: "Belgium", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "BF",
@@ -423,6 +444,7 @@ export const countries: Country[] = [
     longitude: -1.561593,
     name: "Burkina Faso", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -431,7 +453,8 @@ export const countries: Country[] = [
     longitude: 25.48583, 
     name: "Bulgaria", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BH", 
@@ -439,7 +462,8 @@ export const countries: Country[] = [
     longitude: 50.637772, 
     name: "Bahrain", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BI", 
@@ -447,7 +471,8 @@ export const countries: Country[] = [
     longitude: 29.918886, 
     name: "Burundi", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BJ", 
@@ -455,7 +480,8 @@ export const countries: Country[] = [
     longitude: 2.315834, 
     name: "Benin", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BM", 
@@ -463,7 +489,8 @@ export const countries: Country[] = [
     longitude: -64.75737, 
     name: "Bermuda", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BN", 
@@ -471,7 +498,8 @@ export const countries: Country[] = [
     longitude: 114.727669, 
     name: "Brunei", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BO", 
@@ -479,7 +507,8 @@ export const countries: Country[] = [
     longitude: -63.588653, 
     name: "Bolivia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BR", 
@@ -487,7 +516,8 @@ export const countries: Country[] = [
     longitude: -51.92528, 
     name: "Brazil", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BS", 
@@ -495,7 +525,8 @@ export const countries: Country[] = [
     longitude: -77.39628, 
     name: "Bahamas", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BT", 
@@ -503,7 +534,8 @@ export const countries: Country[] = [
     longitude: 90.433601, 
     name: "Bhutan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "BV",
@@ -511,6 +543,7 @@ export const countries: Country[] = [
     longitude: 3.413194,
     name: "Bouvet Island", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -519,7 +552,8 @@ export const countries: Country[] = [
     longitude: 24.684866, 
     name: "Botswana", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BY", 
@@ -527,7 +561,8 @@ export const countries: Country[] = [
     longitude: 27.953389, 
     name: "Belarus", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "BZ", 
@@ -535,7 +570,8 @@ export const countries: Country[] = [
     longitude: -88.49765, 
     name: "Belize", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "CA", 
@@ -543,7 +579,8 @@ export const countries: Country[] = [
     longitude: -106.346771, 
     name: "Canada", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "CC",
@@ -551,6 +588,7 @@ export const countries: Country[] = [
     longitude: 96.870956,
     name: "Cocos Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -559,6 +597,7 @@ export const countries: Country[] = [
     longitude: 21.758664,
     name: "Democratic Republic of the Congo", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -567,6 +606,7 @@ export const countries: Country[] = [
     longitude: 20.939444,
     name: "Central African Republic", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -575,6 +615,7 @@ export const countries: Country[] = [
     longitude: 15.827659,
     name: "Congo", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -583,7 +624,8 @@ export const countries: Country[] = [
     longitude: 8.227512, 
     name: "Switzerland", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "CI",
@@ -591,6 +633,7 @@ export const countries: Country[] = [
     longitude: -5.54708,
     name: "Côte d'Ivoire", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -599,6 +642,7 @@ export const countries: Country[] = [
     longitude: -159.777671,
     name: "Cook Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -607,7 +651,8 @@ export const countries: Country[] = [
     longitude: -71.542969, 
     name: "Chile", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "CM", 
@@ -615,7 +660,8 @@ export const countries: Country[] = [
     longitude: 12.354722, 
     name: "Cameroon", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "CN", 
@@ -623,7 +669,8 @@ export const countries: Country[] = [
     longitude: 104.195397, 
     name: "China", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "CO", 
@@ -631,7 +678,8 @@ export const countries: Country[] = [
     longitude: -74.297333, 
     name: "Colombia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "CR", 
@@ -639,7 +687,8 @@ export const countries: Country[] = [
     longitude: -83.753428, 
     name: "Costa Rica", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "CU", 
@@ -647,7 +696,8 @@ export const countries: Country[] = [
     longitude: -77.781167, 
     name: "Cuba", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "CV",
@@ -655,6 +705,7 @@ export const countries: Country[] = [
     longitude: -24.013197,
     name: "Cape Verde", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -663,6 +714,7 @@ export const countries: Country[] = [
     longitude: 105.690449,
     name: "Christmas Island", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -671,7 +723,8 @@ export const countries: Country[] = [
     longitude: 33.429859, 
     name: "Cyprus", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "CZ",
@@ -679,6 +732,7 @@ export const countries: Country[] = [
     longitude: 15.472962,
     name: "Czech Republic", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -687,7 +741,8 @@ export const countries: Country[] = [
     longitude: 10.451526, 
     name: "Germany", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "DJ", 
@@ -695,7 +750,8 @@ export const countries: Country[] = [
     longitude: 42.590275, 
     name: "Djibouti", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "DK", 
@@ -703,7 +759,8 @@ export const countries: Country[] = [
     longitude: 9.501785, 
     name: "Denmark", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "DM", 
@@ -711,7 +768,8 @@ export const countries: Country[] = [
     longitude: -61.370976, 
     name: "Dominica", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "DO",
@@ -719,6 +777,7 @@ export const countries: Country[] = [
     longitude: -70.162651,
     name: "Dominican Republic", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -727,7 +786,8 @@ export const countries: Country[] = [
     longitude: 1.659626, 
     name: "Algeria", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "EC", 
@@ -735,7 +795,8 @@ export const countries: Country[] = [
     longitude: -78.183406, 
     name: "Ecuador", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "EE", 
@@ -743,7 +804,8 @@ export const countries: Country[] = [
     longitude: 25.013607, 
     name: "Estonia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "EG", 
@@ -751,7 +813,8 @@ export const countries: Country[] = [
     longitude: 30.802498, 
     name: "Egypt", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "EH",
@@ -759,6 +822,7 @@ export const countries: Country[] = [
     longitude: -12.885834,
     name: "Western Sahara", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -767,7 +831,8 @@ export const countries: Country[] = [
     longitude: 39.782334, 
     name: "Eritrea", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "ES", 
@@ -775,7 +840,8 @@ export const countries: Country[] = [
     longitude: -3.74922, 
     name: "Spain", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "ET", 
@@ -783,7 +849,8 @@ export const countries: Country[] = [
     longitude: 40.489673, 
     name: "Ethiopia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "FI", 
@@ -791,7 +858,8 @@ export const countries: Country[] = [
     longitude: 25.748151, 
     name: "Finland", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "FJ", 
@@ -799,7 +867,8 @@ export const countries: Country[] = [
     longitude: 179.414413, 
     name: "Fiji", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "FK",
@@ -807,6 +876,7 @@ export const countries: Country[] = [
     longitude: -59.523613,
     name: "Falkland Islands (Malvinas)", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -815,7 +885,8 @@ export const countries: Country[] = [
     longitude: 150.550812, 
     name: "Micronesia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "FO",
@@ -823,6 +894,7 @@ export const countries: Country[] = [
     longitude: -6.911806,
     name: "Faroe Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -831,7 +903,8 @@ export const countries: Country[] = [
     longitude: 2.213749, 
     name: "France", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "GA", 
@@ -839,7 +912,8 @@ export const countries: Country[] = [
     longitude: 11.609444, 
     name: "Gabon", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "GB",
@@ -847,6 +921,7 @@ export const countries: Country[] = [
     longitude: -3.435973,
     name: "United Kingdom", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -855,7 +930,8 @@ export const countries: Country[] = [
     longitude: -61.604171, 
     name: "Grenada", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "GE", 
@@ -863,7 +939,8 @@ export const countries: Country[] = [
     longitude: 43.356892, 
     name: "Georgia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "GF",
@@ -871,6 +948,7 @@ export const countries: Country[] = [
     longitude: -53.125782,
     name: "French Guiana", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -879,7 +957,8 @@ export const countries: Country[] = [
     longitude: -2.585278, 
     name: "Guernsey", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "GH", 
@@ -887,7 +966,8 @@ export const countries: Country[] = [
     longitude: -1.023194, 
     name: "Ghana", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "GI", 
@@ -895,7 +975,8 @@ export const countries: Country[] = [
     longitude: -5.345374, 
     name: "Gibraltar", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "GL", 
@@ -903,7 +984,8 @@ export const countries: Country[] = [
     longitude: -42.604303, 
     name: "Greenland", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "GM", 
@@ -911,7 +993,8 @@ export const countries: Country[] = [
     longitude: -15.310139, 
     name: "Gambia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "GN", 
@@ -919,7 +1002,8 @@ export const countries: Country[] = [
     longitude: -9.696645, 
     name: "Guinea", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "GP",
@@ -927,6 +1011,7 @@ export const countries: Country[] = [
     longitude: -62.067641,
     name: "Guadeloupe", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -935,6 +1020,7 @@ export const countries: Country[] = [
     longitude: 10.267895,
     name: "Equatorial Guinea", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -943,7 +1029,8 @@ export const countries: Country[] = [
     longitude: 21.824312, 
     name: "Greece", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "GS",
@@ -951,6 +1038,7 @@ export const countries: Country[] = [
     longitude: -36.587909,
     name: "South Georgia and the South Sandwich Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -959,7 +1047,8 @@ export const countries: Country[] = [
     longitude: -90.230759, 
     name: "Guatemala", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "GU", 
@@ -967,7 +1056,8 @@ export const countries: Country[] = [
     longitude: 144.793731, 
     name: "Guam", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "GW",
@@ -975,6 +1065,7 @@ export const countries: Country[] = [
     longitude: -15.180413,
     name: "Guinea-Bissau", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -983,7 +1074,8 @@ export const countries: Country[] = [
     longitude: -58.93018, 
     name: "Guyana", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "GZ", 
@@ -991,7 +1083,8 @@ export const countries: Country[] = [
     longitude: 34.308825, 
     name: "Gaza Strip", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "HK", 
@@ -999,7 +1092,8 @@ export const countries: Country[] = [
     longitude: 114.109497, 
     name: "Hong Kong", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "HM",
@@ -1007,6 +1101,7 @@ export const countries: Country[] = [
     longitude: 73.504158,
     name: "Heard Island and McDonald Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1015,7 +1110,8 @@ export const countries: Country[] = [
     longitude: -86.241905, 
     name: "Honduras", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "HR", 
@@ -1023,7 +1119,8 @@ export const countries: Country[] = [
     longitude: 15.2, 
     name: "Croatia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "HT", 
@@ -1031,7 +1128,8 @@ export const countries: Country[] = [
     longitude: -72.285215, 
     name: "Haiti", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "HU", 
@@ -1039,7 +1137,8 @@ export const countries: Country[] = [
     longitude: 19.503304, 
     name: "Hungary", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "ID", 
@@ -1047,7 +1146,8 @@ export const countries: Country[] = [
     longitude: 113.921327, 
     name: "Indonesia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "IE", 
@@ -1055,7 +1155,8 @@ export const countries: Country[] = [
     longitude: -8.24389, 
     name: "Ireland", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "IL", 
@@ -1063,7 +1164,8 @@ export const countries: Country[] = [
     longitude: 34.851612, 
     name: "Israel", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "IM",
@@ -1071,6 +1173,7 @@ export const countries: Country[] = [
     longitude: -4.548056,
     name: "Isle of Man", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1079,7 +1182,8 @@ export const countries: Country[] = [
     longitude: 78.96288, 
     name: "India", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "IO",
@@ -1087,6 +1191,7 @@ export const countries: Country[] = [
     longitude: 71.876519,
     name: "British Indian Ocean Territory", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1095,7 +1200,8 @@ export const countries: Country[] = [
     longitude: 43.679291, 
     name: "Iraq", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "IR", 
@@ -1103,7 +1209,8 @@ export const countries: Country[] = [
     longitude: 53.688046, 
     name: "Iran", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "IS", 
@@ -1111,7 +1218,8 @@ export const countries: Country[] = [
     longitude: -19.020835, 
     name: "Iceland", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "IT", 
@@ -1119,7 +1227,8 @@ export const countries: Country[] = [
     longitude: 12.56738, 
     name: "Italy", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "JE", 
@@ -1127,7 +1236,8 @@ export const countries: Country[] = [
     longitude: -2.13125, 
     name: "Jersey", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "JM", 
@@ -1135,7 +1245,8 @@ export const countries: Country[] = [
     longitude: -77.297508, 
     name: "Jamaica", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "JO", 
@@ -1143,7 +1254,8 @@ export const countries: Country[] = [
     longitude: 36.238414, 
     name: "Jordan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "JP", 
@@ -1151,7 +1263,8 @@ export const countries: Country[] = [
     longitude: 138.252924, 
     name: "Japan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "KE", 
@@ -1159,7 +1272,8 @@ export const countries: Country[] = [
     longitude: 37.906193, 
     name: "Kenya", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "KG", 
@@ -1167,7 +1281,8 @@ export const countries: Country[] = [
     longitude: 74.766098, 
     name: "Kyrgyzstan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "KH", 
@@ -1175,7 +1290,8 @@ export const countries: Country[] = [
     longitude: 104.990963, 
     name: "Cambodia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "KI", 
@@ -1183,7 +1299,8 @@ export const countries: Country[] = [
     longitude: -168.734039, 
     name: "Kiribati", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "KM", 
@@ -1191,7 +1308,8 @@ export const countries: Country[] = [
     longitude: 43.872219, 
     name: "Comoros", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "KN",
@@ -1199,6 +1317,7 @@ export const countries: Country[] = [
     longitude: -62.782998,
     name: "Saint Kitts and Nevis", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1207,6 +1326,7 @@ export const countries: Country[] = [
     longitude: 127.510093,
     name: "North Korea", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1215,6 +1335,7 @@ export const countries: Country[] = [
     longitude: 127.766922,
     name: "South Korea", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1223,7 +1344,8 @@ export const countries: Country[] = [
     longitude: 47.481766, 
     name: "Kuwait", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "KY",
@@ -1231,6 +1353,7 @@ export const countries: Country[] = [
     longitude: -80.566956,
     name: "Cayman Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1239,7 +1362,8 @@ export const countries: Country[] = [
     longitude: 66.923684, 
     name: "Kazakhstan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "LA", 
@@ -1247,7 +1371,8 @@ export const countries: Country[] = [
     longitude: 102.495496, 
     name: "Laos", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "LB", 
@@ -1255,7 +1380,8 @@ export const countries: Country[] = [
     longitude: 35.862285, 
     name: "Lebanon", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "LC",
@@ -1263,6 +1389,7 @@ export const countries: Country[] = [
     longitude: -60.978893,
     name: "Saint Lucia", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1271,7 +1398,8 @@ export const countries: Country[] = [
     longitude: 9.555373, 
     name: "Liechtenstein", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "LK", 
@@ -1279,7 +1407,8 @@ export const countries: Country[] = [
     longitude: 80.771797, 
     name: "Sri Lanka", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "LR", 
@@ -1287,7 +1416,8 @@ export const countries: Country[] = [
     longitude: -9.429499, 
     name: "Liberia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "LS", 
@@ -1295,7 +1425,8 @@ export const countries: Country[] = [
     longitude: 28.233608, 
     name: "Lesotho", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "LT", 
@@ -1303,7 +1434,8 @@ export const countries: Country[] = [
     longitude: 23.881275, 
     name: "Lithuania", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "LU", 
@@ -1311,7 +1443,8 @@ export const countries: Country[] = [
     longitude: 6.129583, 
     name: "Luxembourg", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "LV", 
@@ -1319,7 +1452,8 @@ export const countries: Country[] = [
     longitude: 24.603189, 
     name: "Latvia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "LY", 
@@ -1327,7 +1461,8 @@ export const countries: Country[] = [
     longitude: 17.228331, 
     name: "Libya", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "MA", 
@@ -1335,7 +1470,8 @@ export const countries: Country[] = [
     longitude: -7.09262, 
     name: "Morocco", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "MC", 
@@ -1343,7 +1479,8 @@ export const countries: Country[] = [
     longitude: 7.412841, 
     name: "Monaco", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "MD", 
@@ -1351,7 +1488,8 @@ export const countries: Country[] = [
     longitude: 28.369885, 
     name: "Moldova", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "ME", 
@@ -1359,7 +1497,8 @@ export const countries: Country[] = [
     longitude: 19.37439, 
     name: "Montenegro", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "MG",
@@ -1367,6 +1506,7 @@ export const countries: Country[] = [
     longitude: 46.869107,
     name: "Madagascar", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1375,6 +1515,7 @@ export const countries: Country[] = [
     longitude: 171.184478,
     name: "Marshall Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1383,6 +1524,7 @@ export const countries: Country[] = [
     longitude: 21.745275,
     name: "Macedonia", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1391,7 +1533,8 @@ export const countries: Country[] = [
     longitude: -3.996166, 
     name: "Mali", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "MM",
@@ -1399,6 +1542,7 @@ export const countries: Country[] = [
     longitude: 95.956223,
     name: "Myanmar", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1407,7 +1551,8 @@ export const countries: Country[] = [
     longitude: 103.846656, 
     name: "Mongolia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "MO", 
@@ -1415,7 +1560,8 @@ export const countries: Country[] = [
     longitude: 113.543873, 
     name: "Macau", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "MP",
@@ -1423,6 +1569,7 @@ export const countries: Country[] = [
     longitude: 145.38469,
     name: "Northern Mariana Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1431,6 +1578,7 @@ export const countries: Country[] = [
     longitude: -61.024174,
     name: "Martinique", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1439,7 +1587,8 @@ export const countries: Country[] = [
     longitude: -10.940835, 
     name: "Mauritania", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "MS",
@@ -1447,6 +1596,7 @@ export const countries: Country[] = [
     longitude: -62.187366,
     name: "Montserrat", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1455,7 +1605,8 @@ export const countries: Country[] = [
     longitude: 14.375416, 
     name: "Malta", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "MU", 
@@ -1463,7 +1614,8 @@ export const countries: Country[] = [
     longitude: 57.552152, 
     name: "Mauritius", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "MV", 
@@ -1471,7 +1623,8 @@ export const countries: Country[] = [
     longitude: 73.22068, 
     name: "Maldives", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "MW", 
@@ -1479,7 +1632,8 @@ export const countries: Country[] = [
     longitude: 34.301525, 
     name: "Malawi", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "MX", 
@@ -1487,7 +1641,8 @@ export const countries: Country[] = [
     longitude: -102.552784, 
     name: "Mexico", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "MY", 
@@ -1495,7 +1650,8 @@ export const countries: Country[] = [
     longitude: 109.091912, 
     name: "Malaysia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "MZ",
@@ -1503,6 +1659,7 @@ export const countries: Country[] = [
     longitude: 35.529562,
     name: "Mozambique", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1511,7 +1668,8 @@ export const countries: Country[] = [
     longitude: 18.49041, 
     name: "Namibia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "NC",
@@ -1519,6 +1677,7 @@ export const countries: Country[] = [
     longitude: 165.618042,
     name: "New Caledonia", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1527,7 +1686,8 @@ export const countries: Country[] = [
     longitude: 8.081666, 
     name: "Niger", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "NF",
@@ -1535,6 +1695,7 @@ export const countries: Country[] = [
     longitude: 167.954712,
     name: "Norfolk Island", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1543,7 +1704,8 @@ export const countries: Country[] = [
     longitude: 8.675277, 
     name: "Nigeria", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "NI", 
@@ -1551,7 +1713,8 @@ export const countries: Country[] = [
     longitude: -85.207229, 
     name: "Nicaragua", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "NL", 
@@ -1559,7 +1722,8 @@ export const countries: Country[] = [
     longitude: 5.291266, 
     name: "Netherlands", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "NO", 
@@ -1567,7 +1731,8 @@ export const countries: Country[] = [
     longitude: 8.468946, 
     name: "Norway", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "NP", 
@@ -1575,7 +1740,8 @@ export const countries: Country[] = [
     longitude: 84.124008, 
     name: "Nepal", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "NR", 
@@ -1583,7 +1749,8 @@ export const countries: Country[] = [
     longitude: 166.931503, 
     name: "Nauru", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "NU", 
@@ -1591,7 +1758,8 @@ export const countries: Country[] = [
     longitude: -169.867233, 
     name: "Niue", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "NZ",
@@ -1599,6 +1767,7 @@ export const countries: Country[] = [
     longitude: 174.885971,
     name: "New Zealand", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1607,7 +1776,8 @@ export const countries: Country[] = [
     longitude: 55.923255, 
     name: "Oman", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "PA", 
@@ -1615,7 +1785,8 @@ export const countries: Country[] = [
     longitude: -80.782127, 
     name: "Panama", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "PE", 
@@ -1623,7 +1794,8 @@ export const countries: Country[] = [
     longitude: -75.015152, 
     name: "Peru", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "PF",
@@ -1631,6 +1803,7 @@ export const countries: Country[] = [
     longitude: -149.406843,
     name: "French Polynesia", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1639,6 +1812,7 @@ export const countries: Country[] = [
     longitude: 143.95555,
     name: "Papua New Guinea", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1647,6 +1821,7 @@ export const countries: Country[] = [
     longitude: 121.774017,
     name: "Philippines", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1655,7 +1830,8 @@ export const countries: Country[] = [
     longitude: 69.345116, 
     name: "Pakistan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "PL", 
@@ -1663,7 +1839,8 @@ export const countries: Country[] = [
     longitude: 19.145136, 
     name: "Poland", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "PM",
@@ -1671,6 +1848,7 @@ export const countries: Country[] = [
     longitude: -56.27111,
     name: "Saint Pierre and Miquelon", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1679,6 +1857,7 @@ export const countries: Country[] = [
     longitude: -127.439308,
     name: "Pitcairn Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1687,6 +1866,7 @@ export const countries: Country[] = [
     longitude: -66.590149,
     name: "Puerto Rico", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1695,6 +1875,7 @@ export const countries: Country[] = [
     longitude: 35.233154,
     name: "Palestine", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1703,7 +1884,8 @@ export const countries: Country[] = [
     longitude: -8.224454, 
     name: "Portugal", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "PW", 
@@ -1711,7 +1893,8 @@ export const countries: Country[] = [
     longitude: 134.58252, 
     name: "Palau", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "PY", 
@@ -1719,7 +1902,8 @@ export const countries: Country[] = [
     longitude: -58.443832, 
     name: "Paraguay", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "QA", 
@@ -1727,7 +1911,8 @@ export const countries: Country[] = [
     longitude: 51.183884, 
     name: "Qatar", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "RE", 
@@ -1735,7 +1920,8 @@ export const countries: Country[] = [
     longitude: 55.536384, 
     name: "Réunion", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "RO", 
@@ -1743,7 +1929,8 @@ export const countries: Country[] = [
     longitude: 24.96676, 
     name: "Romania", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "RS", 
@@ -1751,7 +1938,8 @@ export const countries: Country[] = [
     longitude: 21.005859, 
     name: "Serbia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "RU", 
@@ -1759,7 +1947,8 @@ export const countries: Country[] = [
     longitude: 105.318756, 
     name: "Russia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "RW", 
@@ -1767,7 +1956,8 @@ export const countries: Country[] = [
     longitude: 29.873888, 
     name: "Rwanda", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "SA",
@@ -1775,6 +1965,7 @@ export const countries: Country[] = [
     longitude: 45.079162,
     name: "Saudi Arabia", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1783,6 +1974,7 @@ export const countries: Country[] = [
     longitude: 160.156194,
     name: "Solomon Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1791,7 +1983,8 @@ export const countries: Country[] = [
     longitude: 55.491977, 
     name: "Seychelles", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "SD", 
@@ -1799,7 +1992,8 @@ export const countries: Country[] = [
     longitude: 30.7671933, 
     name: "Sudan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "SS", 
@@ -1807,7 +2001,8 @@ export const countries: Country[] = [
     longitude: 30.659016, 
     name: "South Sudan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "SE", 
@@ -1815,7 +2010,8 @@ export const countries: Country[] = [
     longitude: 18.643501, 
     name: "Sweden", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "SG", 
@@ -1823,7 +2019,8 @@ export const countries: Country[] = [
     longitude: 103.819836, 
     name: "Singapore", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "SH",
@@ -1831,6 +2028,7 @@ export const countries: Country[] = [
     longitude: -10.030696,
     name: "Saint Helena", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1839,7 +2037,8 @@ export const countries: Country[] = [
     longitude: 14.995463, 
     name: "Slovenia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "SJ",
@@ -1847,6 +2046,7 @@ export const countries: Country[] = [
     longitude: 23.670272,
     name: "Svalbard and Jan Mayen", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1855,7 +2055,8 @@ export const countries: Country[] = [
     longitude: 19.699024, 
     name: "Slovakia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "SL",
@@ -1863,6 +2064,7 @@ export const countries: Country[] = [
     longitude: -11.779889,
     name: "Sierra Leone", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1871,7 +2073,8 @@ export const countries: Country[] = [
     longitude: 12.457777, 
     name: "San Marino", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "SN", 
@@ -1879,7 +2082,8 @@ export const countries: Country[] = [
     longitude: -14.452362, 
     name: "Senegal", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "SO", 
@@ -1887,7 +2091,8 @@ export const countries: Country[] = [
     longitude: 46.199616, 
     name: "Somalia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "SR", 
@@ -1895,7 +2100,8 @@ export const countries: Country[] = [
     longitude: -56.027783, 
     name: "Suriname", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "ST",
@@ -1903,6 +2109,7 @@ export const countries: Country[] = [
     longitude: 6.613081,
     name: "São Tomé and Príncipe", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1911,6 +2118,7 @@ export const countries: Country[] = [
     longitude: -88.89653,
     name: "El Salvador", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1919,7 +2127,8 @@ export const countries: Country[] = [
     longitude: 38.996815, 
     name: "Syria", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "SZ", 
@@ -1927,7 +2136,8 @@ export const countries: Country[] = [
     longitude: 31.465866, 
     name: "Swaziland", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "TC",
@@ -1935,6 +2145,7 @@ export const countries: Country[] = [
     longitude: -71.797928,
     name: "Turks and Caicos Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1943,7 +2154,8 @@ export const countries: Country[] = [
     longitude: 18.732207, 
     name: "Chad", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "TF",
@@ -1951,6 +2163,7 @@ export const countries: Country[] = [
     longitude: 69.348557,
     name: "French Southern Territories", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -1959,7 +2172,8 @@ export const countries: Country[] = [
     longitude: 0.824782, 
     name: "Togo", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "TH", 
@@ -1967,7 +2181,8 @@ export const countries: Country[] = [
     longitude: 100.992541, 
     name: "Thailand", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "TJ", 
@@ -1975,7 +2190,8 @@ export const countries: Country[] = [
     longitude: 71.276093, 
     name: "Tajikistan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "TK", 
@@ -1983,7 +2199,8 @@ export const countries: Country[] = [
     longitude: -171.855881, 
     name: "Tokelau", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "TL",
@@ -1991,6 +2208,7 @@ export const countries: Country[] = [
     longitude: 125.727539,
     name: "Timor-Leste", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -1999,6 +2217,7 @@ export const countries: Country[] = [
     longitude: 59.556278,
     name: "Turkmenistan", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -2007,7 +2226,8 @@ export const countries: Country[] = [
     longitude: 9.537499, 
     name: "Tunisia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "TO", 
@@ -2015,7 +2235,8 @@ export const countries: Country[] = [
     longitude: -175.198242, 
     name: "Tonga", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "TR", 
@@ -2023,7 +2244,8 @@ export const countries: Country[] = [
     longitude: 35.243322, 
     name: "Turkey", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "TT",
@@ -2031,6 +2253,7 @@ export const countries: Country[] = [
     longitude: -61.222503,
     name: "Trinidad and Tobago", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -2039,7 +2262,8 @@ export const countries: Country[] = [
     longitude: 177.64933, 
     name: "Tuvalu", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "TW", 
@@ -2047,7 +2271,8 @@ export const countries: Country[] = [
     longitude: 120.960515, 
     name: "Taiwan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "TZ", 
@@ -2055,7 +2280,8 @@ export const countries: Country[] = [
     longitude: 34.888822, 
     name: "Tanzania", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "UA", 
@@ -2063,7 +2289,8 @@ export const countries: Country[] = [
     longitude: 31.16558, 
     name: "Ukraine", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "UG", 
@@ -2071,7 +2298,8 @@ export const countries: Country[] = [
     longitude: 32.290275, 
     name: "Uganda", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "US",
@@ -2079,6 +2307,7 @@ export const countries: Country[] = [
     longitude: -95.712891,
     name: "United States", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -2087,7 +2316,8 @@ export const countries: Country[] = [
     longitude: -55.765835, 
     name: "Uruguay", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "UZ", 
@@ -2095,7 +2325,8 @@ export const countries: Country[] = [
     longitude: 64.585262, 
     name: "Uzbekistan", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "VA",
@@ -2103,6 +2334,7 @@ export const countries: Country[] = [
     longitude: 12.453389,
     name: "Vatican City", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -2111,6 +2343,7 @@ export const countries: Country[] = [
     longitude: -61.287228,
     name: "Saint Vincent and the Grenadines", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -2119,7 +2352,8 @@ export const countries: Country[] = [
     longitude: -66.58973, 
     name: "Venezuela", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "VG",
@@ -2127,6 +2361,7 @@ export const countries: Country[] = [
     longitude: -64.639968,
     name: "British Virgin Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   {
@@ -2135,6 +2370,7 @@ export const countries: Country[] = [
     longitude: -64.896335,
     name: "U.S. Virgin Islands", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -2143,7 +2379,8 @@ export const countries: Country[] = [
     longitude: 108.277199, 
     name: "Vietnam", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "VU", 
@@ -2151,7 +2388,8 @@ export const countries: Country[] = [
     longitude: 166.959158, 
     name: "Vanuatu", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "WF",
@@ -2159,6 +2397,7 @@ export const countries: Country[] = [
     longitude: -177.156097,
     name: "Wallis and Futuna", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -2167,7 +2406,8 @@ export const countries: Country[] = [
     longitude: -172.104629, 
     name: "Samoa", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "XK", 
@@ -2175,7 +2415,8 @@ export const countries: Country[] = [
     longitude: 20.902977, 
     name: "Kosovo", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "YE", 
@@ -2183,7 +2424,8 @@ export const countries: Country[] = [
     longitude: 48.516388, 
     name: "Yemen", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "YT", 
@@ -2191,7 +2433,8 @@ export const countries: Country[] = [
     longitude: 45.166244, 
     name: "Mayotte", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   {
     code: "ZA",
@@ -2199,6 +2442,7 @@ export const countries: Country[] = [
     longitude: 22.937506,
     name: "South Africa", 
     title: "",
+    leader: "",
     img_link: "",
   },
   { 
@@ -2207,7 +2451,8 @@ export const countries: Country[] = [
     longitude: 27.849332, 
     name: "Zambia", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
   { 
     code: "ZW", 
@@ -2215,7 +2460,8 @@ export const countries: Country[] = [
     longitude: 29.154857, 
     name: "Zimbabwe", 
     title: "",
-    img_link: "", 
+    leader: "",
+    img_link: "",
   },
 ];
 

@@ -20,7 +20,8 @@ const resources = {
         theme: "Theme",
         difficultyModifiers: "Difficulty modifiers",
         startingNextDay: "Starting the next day!",
-        noImageMode: "Hide country image for more of a challenge.",
+        allLeadersMode:
+          "Include both head of state and head of government for added challenge.",
         rotationMode: "Rotate randomly country image.",
       },
       buyMeACoffee: "Buy me a ☕!",
@@ -43,7 +44,7 @@ const resources = {
         theme: "Thème",
         difficultyModifiers: "Modificateurs de difficulté",
         startingNextDay: "A partir du lendemain !",
-        noImageMode: "Cache l'image du pays pour plus de challenge.",
+        allLeadersMode: "Cache l'image du pays pour plus de challenge.",
         rotationMode: "Tourne l'image du pays de manière aléatoire.",
       },
       buyMeACoffee: "Offrez moi un ☕ !",

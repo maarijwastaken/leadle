@@ -7,6 +7,8 @@ const forcedCountries: Record<string, string> = {
   "2022-02-03": "PY",
 };
 
+//TODO: Change this so it's random and not based on the day
+
 export function useCountry(dayString: string): [Country, number, number] {
   const country = useMemo(() => {
     const forcedCountryCode = forcedCountries[dayString];
@@ -19,9 +21,7 @@ export function useCountry(dayString: string): [Country, number, number] {
 
     return (
       forcedCountry ??
-      countriesWithImage[
-        Math.floor(seedrandom.alea(dayString)() * countriesWithImage.length)
-      ]
+      countriesWithImage[Math.floor(Math.random() * countriesWithImage.length)]
     );
   }, [dayString]);
 

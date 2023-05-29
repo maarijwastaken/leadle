@@ -1,9 +1,9 @@
 import React from "react";
 
-export function Worldle() {
+export function Leadle() {
   return (
     <span className="font-bold">
-      WOR<span className="text-green-600">L</span>DLE
+      <span className="text-red-600">LEAD</span>LE
     </span>
   );
 }

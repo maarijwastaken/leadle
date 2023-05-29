@@ -34,15 +34,15 @@ export function Game({ settingsData }: GameProps) {
 
   const [currentGuess, setCurrentGuess] = useState("");
   const [guesses, addGuess] = useGuesses(dayString);
-  const [hideImageMode, setHideImageMode] = useMode(
-    "hideImageMode",
+  const [allLeadersMode, seAllLeadersMode] = useMode(
+    "allLeadersMode",
     dayString,
-    settingsData.noImageMode
+    settingsData.allLeadersMode
   );
   const [rotationMode, setRotationMode] = useMode(
     "rotationMode",
     dayString,
-    settingsData.rotationMode
+    settingsData.guessLeaderMode
   );
 
   const gameEnded =
@@ -94,11 +94,11 @@ export function Game({ settingsData }: GameProps) {
 
   return (
     <div className="flex-grow flex flex-col mx-2">
-      {hideImageMode && !gameEnded && (
+      {allLeadersMode && !gameEnded && (
         <button
           className="border-2 uppercase my-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
           type="button"
-          onClick={() => setHideImageMode(false)}
+          onClick={() => seAllLeadersMode(false)}
         >
           {t("showCountry")}
         </button>
@@ -106,7 +106,7 @@ export function Game({ settingsData }: GameProps) {
       <div className="my-1">
         <img
           className={`max-h-52 m-auto transition-transform duration-700 ease-in dark:invert ${
-            hideImageMode && !gameEnded ? "h-0" : "h-full"
+            allLeadersMode && !gameEnded ? "h-0" : "h-full"
           }`}
           alt="country to guess"
           src={`images/countries/${country.code.toLowerCase()}/vector.svg`}
@@ -119,7 +119,7 @@ export function Game({ settingsData }: GameProps) {
           }
         />
       </div>
-      {rotationMode && !hideImageMode && !gameEnded && (
+      {rotationMode && !allLeadersMode && !gameEnded && (
         <button
           className="border-2 uppercase mb-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
           type="button"
@@ -140,7 +140,7 @@ export function Game({ settingsData }: GameProps) {
               guesses={guesses}
               dayString={dayString}
               settingsData={settingsData}
-              hideImageMode={hideImageMode}
+              allLeadersMode={allLeadersMode}
               rotationMode={rotationMode}
             />
             <a

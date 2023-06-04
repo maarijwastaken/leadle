@@ -27,7 +27,7 @@ export function CountryInput({
       onSuggestionsFetchRequested={({ value }) =>
         setSuggestions(
           countries
-            .map((c) => getCountryName(i18n.resolvedLanguage, c).toUpperCase())
+            .map((c) => getCountryName(c).toUpperCase())
             .filter((countryName) =>
               sanitizeCountryName(countryName).includes(
                 sanitizeCountryName(value)

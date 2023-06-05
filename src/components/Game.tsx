@@ -30,8 +30,10 @@ interface GameProps {
   settingsData: SettingsData;
 }
 
-function testFunction() {
-  setCountriesLeaderInfo();
+async function testFunction(img_link: string) {
+  const countryImage : string = await getLeaderImage(img_link);
+  console.log("COUNTRYYY", countryImage)
+  return countryImage;
 }
 
 export function Game({ settingsData }: GameProps) {
@@ -39,8 +41,7 @@ export function Game({ settingsData }: GameProps) {
   const dayString = useMemo(getDayString, []);
 
   const country = useCountry(dayString);
-  const countryImage = getLeaderImage(country.img_link);
-  console.log("COUNTRYYY", countryImage)
+  const [leaderImage, setLeaderImage] = useState("");
 
   const [currentGuess, setCurrentGuess] = useState("");
   const [guesses, addGuess] = useGuesses(dayString);
@@ -91,6 +92,8 @@ export function Game({ settingsData }: GameProps) {
   );
 
   useEffect(() => {
+    getLeaderImage(country.img_link)
+    .then((link) => setLeaderImage(link))
     if (
       guesses.length === MAX_TRY_COUNT &&
       guesses[guesses.length - 1].distance > 0
@@ -108,7 +111,7 @@ export function Game({ settingsData }: GameProps) {
         <img
           className={`max-h-52 m-auto transition-transform duration-700 ease-in dark:invert h-full`}
           alt="country to guess"
-          src={countryImage}
+          src={leaderImage}
           // src={`${getLeaderImage(country.img_link)}`}
         />
       </div>
@@ -118,7 +121,7 @@ export function Game({ settingsData }: GameProps) {
         settingsData={settingsData}
       />
       <div className="my-2">
-        <button onClick={testFunction}>Test</button>
+        <button>Test</button>
         {gameEnded ? (
           <>
             <Share

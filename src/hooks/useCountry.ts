@@ -9,7 +9,7 @@ const forcedCountries: Record<string, string> = {
 
 //TODO: Change this so it's random and not based on the day
 
-export function useCountry(dayString: string): [Country, number, number] {
+export function useCountry(dayString: string): Country {
   const country = useMemo(() => {
     const forcedCountryCode = forcedCountries[dayString];
     const forcedCountry =
@@ -25,16 +25,5 @@ export function useCountry(dayString: string): [Country, number, number] {
     );
   }, [dayString]);
 
-  const randomAngle = useMemo(
-    () => seedrandom.alea(dayString)() * 360,
-    [dayString]
-  );
-
-  const imageScale = useMemo(() => {
-    const normalizedAngle = 45 - (randomAngle % 90);
-    const radianAngle = (normalizedAngle * Math.PI) / 180;
-    return 1 / (Math.cos(radianAngle) * Math.sqrt(2));
-  }, [randomAngle]);
-
-  return [country, randomAngle, imageScale];
+  return country;
 }

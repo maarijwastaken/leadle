@@ -37,7 +37,7 @@ export function Game({ settingsData }: GameProps) {
   const { t, i18n } = useTranslation();
   const dayString = useMemo(getDayString, []);
 
-  const [country, randomAngle, imageScale] = useCountry(dayString);
+  const country = useCountry(dayString);
 
   const [currentGuess, setCurrentGuess] = useState("");
   const [guesses, addGuess] = useGuesses(dayString);
@@ -117,13 +117,6 @@ export function Game({ settingsData }: GameProps) {
           }`}
           alt="country to guess"
           src={`images/countries/${country.code.toLowerCase()}/vector.svg`}
-          style={
-            rotationMode && !gameEnded
-              ? {
-                  transform: `rotate(${randomAngle}deg) scale(${imageScale})`,
-                }
-              : {}
-          }
         />
       </div>
       {rotationMode && !allLeadersMode && !gameEnded && (

@@ -21,7 +21,7 @@ export function getLeaderImage(img_link: string) : string {
         }
         else // It's probably San Marino
           infoboxImageURL = "https://en.wikipedia.org/wiki/Ham_sandwich#/media/File:Ham_sandwich1.jpg" // ham sandwich is the fallback
-        fullSizeInfoboxImageURL = "https://commons.wikimedia.org/wiki/Special:FilePath/" + infoboxImageURL.split("File:").pop()
+          fullSizeInfoboxImageURL = "https://commons.wikimedia.org/wiki/Special:FilePath/" + infoboxImageURL.split("File:").pop()
         console.log(fullSizeInfoboxImageURL);
         return fullSizeInfoboxImageURL;
 
@@ -51,5 +51,5 @@ export function getLeaderImage(img_link: string) : string {
         })
       }
     })
-    return "https://en.wikipedia.org/wiki/Ham_sandwich#/media/File:Ham_sandwich1.jpg" // If all goes wrong, ham sandwich
+    return "https://commons.wikimedia.org/wiki/Special:FilePath/Ham_sandwich1.jpg" // If all goes wrong, ham sandwich
 }

@@ -16,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import { SettingsData } from "../hooks/useSettings";
 import { useMode } from "../hooks/useMode";
 import { useCountry } from "../hooks/useCountry";
+import { getLeaderImage } from "../hooks/getLeaderImage"
 import { getCountriesInfo } from "../hooks/getCountriesInfo";
 import { get } from "http";
 
@@ -38,6 +39,8 @@ export function Game({ settingsData }: GameProps) {
   const dayString = useMemo(getDayString, []);
 
   const country = useCountry(dayString);
+  const countryImage = getLeaderImage(country.img_link);
+  console.log("COUNTRYYY", countryImage)
 
   const [currentGuess, setCurrentGuess] = useState("");
   const [guesses, addGuess] = useGuesses(dayString);
@@ -105,7 +108,8 @@ export function Game({ settingsData }: GameProps) {
         <img
           className={`max-h-52 m-auto transition-transform duration-700 ease-in dark:invert h-full`}
           alt="country to guess"
-          src={`images/countries/${country.code.toLowerCase()}/vector.svg`}
+          src={countryImage}
+          // src={`${getLeaderImage(country.img_link)}`}
         />
       </div>
       <Guesses

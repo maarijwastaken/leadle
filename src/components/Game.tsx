@@ -101,33 +101,13 @@ export function Game({ settingsData }: GameProps) {
 
   return (
     <div className="flex-grow flex flex-col mx-2">
-      {allLeadersMode && !gameEnded && (
-        <button
-          className="border-2 uppercase my-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
-          type="button"
-          onClick={() => seAllLeadersMode(false)}
-        >
-          {t("showCountry")}
-        </button>
-      )}
       <div className="my-1">
         <img
-          className={`max-h-52 m-auto transition-transform duration-700 ease-in dark:invert ${
-            allLeadersMode && !gameEnded ? "h-0" : "h-full"
-          }`}
+          className={`max-h-52 m-auto transition-transform duration-700 ease-in dark:invert h-full`}
           alt="country to guess"
           src={`images/countries/${country.code.toLowerCase()}/vector.svg`}
         />
       </div>
-      {rotationMode && !allLeadersMode && !gameEnded && (
-        <button
-          className="border-2 uppercase mb-2 hover:bg-gray-50 active:bg-gray-100 dark:hover:bg-slate-800 dark:active:bg-slate-700"
-          type="button"
-          onClick={() => setRotationMode(false)}
-        >
-          {t("cancelRotation")}
-        </button>
-      )}
       <Guesses
         rowCount={MAX_TRY_COUNT}
         guesses={guesses}

@@ -2056,31 +2056,31 @@ export function setCountriesLeaderInfo() {
 
   const toPrint: {code: string; latitude: number; longitude: number; name: string; title: string; leader: string; img_link: string;}[] = [];
 
-  for (let i = 0; i < leaders.length; i++) {
-    let attemptAtCountryName;
-    let isinCountry = false;
-    if (leaders[i][0].includes(" of ")) {
-      attemptAtCountryName = leaders[i][0].split("of").pop();
-      if (attemptAtCountryName) {
-        for (let j = 0; j < countries.length; j++) {
-          if (sanitizeCountryName(countries[j].name) === sanitizeCountryName(attemptAtCountryName)) {
-            // console.log(attemptAtCountryName);
-            toPrint.push({ code: countries[j].code, latitude: countries[j].latitude, longitude: countries[j].longitude, name: countries[j].name, title: leaders[i][0], leader: leaders[i][1], img_link: leaders[i][2] })
-            isinCountry = true;
-          }
-        }
-        if (!isinCountry) {
-          console.log("Not in countries", attemptAtCountryName);
-        }
+//   for (let i = 0; i < leaders.length; i++) {
+//     let attemptAtCountryName;
+//     let isinCountry = false;
+//     if (leaders[i][0].includes(" of ")) {
+//       attemptAtCountryName = leaders[i][0].split("of").pop();
+//       if (attemptAtCountryName) {
+//         for (let j = 0; j < countries.length; j++) {
+//           if (sanitizeCountryName(countries[j].name) === sanitizeCountryName(attemptAtCountryName)) {
+//             // console.log(attemptAtCountryName);
+//             toPrint.push({ code: countries[j].code, latitude: countries[j].latitude, longitude: countries[j].longitude, name: countries[j].name, title: leaders[i][0], leader: leaders[i][1], img_link: leaders[i][2] })
+//             isinCountry = true;
+//           }
+//         }
+//         if (!isinCountry) {
+//           console.log("Not in countries", attemptAtCountryName);
+//         }
         
-      }
-    }
-    else {
-      console.log("No Of", leaders[i][0]);
-    }
-  }
+//       }
+//     }
+//     else {
+//       console.log("No Of", leaders[i][0]);
+//     }
+//   }
 
-  console.log(toPrint);
+//   console.log(toPrint);
 
 
 }
